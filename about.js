@@ -7,7 +7,8 @@ const app = express()
 app.use(helmet())
 
 app.get('*', (req, res) => {
-    res.sendStatus(200)
+    res.sendStatus(400)
 });
+
 
 module.exports = app
